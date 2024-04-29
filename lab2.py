@@ -9,6 +9,10 @@ def find_min_max(numbers):
     return [min(numbers), max(numbers)]
 def calc_average(numbers): 
     return sum(numbers) / len(numbers)
+def find_median(numbers):
+    lstLen=len(numbers)
+    sortedLst=sorted(numbers)
+
 
 def main():
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
@@ -16,6 +20,7 @@ def main():
     num_list = get_user_input() 
     print(find_min_max(num_list))
     print(calc_average(num_list))
+    print(find_median(num_list))
     
 if __name__ == "__main__":
     main()
